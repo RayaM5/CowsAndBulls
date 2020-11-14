@@ -43,5 +43,7 @@ def game(numd):
 
 
 Makenum()
+
 print (str(listn))
+
 game(4)
