@@ -23,11 +23,22 @@ def game(numd):
         if guess == listn:
             print("You won.")
             print("It took you "+str(count)+" guess(es).")
+            game_on= input("Do you want to play agian?: ")
+            if game_on == "yes":
+                 Makenum()
+                 game(4)
+            else: break
+
             break
         
         elif count >= 10:
             print (str(listn))
             print("Looser!!! (>10 attempts)")
+            game_on= input("Do you want to play agian?: ")
+            if game_on == "yes":
+                 Makenum()
+                 game(4)
+
             break
             
         else:
